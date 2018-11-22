@@ -4,7 +4,7 @@
 ![alt text](https://forthebadge.com/images/badges/powered-by-netflix.svg "Powered by Netflix")
 
 A little clone of Leboncoin made with React. All rights reserved to Leboncoin & Groupe Schibsted.
-For now, I've made only Front end.
+For now, I've made only Front end (used another API).
 
 ---
 
