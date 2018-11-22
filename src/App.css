@@ -1,32 +1,94 @@
-.App {
-  text-align: center;
+/* GLOBAL */
+body {
+	font-size: 14px;
+	background-color: #fafafa;
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+	text-decoration: none;
+	color: #000;
 }
 
-.App-link {
-  color: #61dafb;
+.ahref {
+	cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+	max-width: 1024px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* FORM */
+input,
+textarea {
+	outline: none;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 15px;
+	width: calc(100% - 30px);
+	margin: 10px 0 25px 0;
+}
+
+input:focus,
+textarea:focus {
+	border: 1px solid #f56b2a;
+}
+
+button,
+.btn {
+	background: #4183d7;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	border: 0;
+	border-radius: 3px;
+	padding: 15px;
+	width: 100%;
+}
+
+button:hover,
+.tel:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.btn-outline {
+	border: 1px solid #4183d7;
+	color: #4183d7;
+	text-transform: uppercase;
+	font-weight: 600;
+	border-radius: 3px;
+	padding: 14px;
+	width: calc(100% - 20px);
+	text-decoration: none;
+	font-size: 11px;
+	margin-top: 20px;
+	display: block;
+}
+
+.btn-outline:hover {
+	border: 1px solid #4183d7;
+	background: #4183d7;
+	color: #fff;
+}
+
+.tel {
+	background: #f56b2a;
+	width: auto;
+	text-align: center;
 }

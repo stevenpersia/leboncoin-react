@@ -1,0 +1,32 @@
+/* HEADER */
+header {
+	background: #f56b2a;
+	color: #fff;
+	height: 60px;
+}
+
+header div {
+	display: flex;
+	align-items: center;
+}
+
+header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu li,
+.account li,
+.menu ul,
+.account ul {
+	display: inline;
+	padding: 0 10px;
+	margin: 0;
+	line-height: 60px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.account li {
+	border-left: 1px solid #fff;
+}

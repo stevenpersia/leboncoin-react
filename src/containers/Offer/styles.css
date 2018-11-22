@@ -1,0 +1,87 @@
+/* OFFER */
+.offer {
+	display: flex;
+	margin-top: 40px;
+}
+
+.offer-main {
+	flex: 1;
+	margin-right: 30px;
+}
+
+.offer-sidebar {
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	width: 230px;
+	height: 150px;
+	padding: 30px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.22);
+	box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.22);
+}
+
+.offer-sidebar img {
+	width: 65px;
+	height: 65px;
+}
+
+.offer-sidebar .avatar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+	font-weight: 600;
+}
+
+.offer-sidebar .avatar span {
+	margin-left: 10px;
+}
+
+.offer-img img {
+	background: #ccc;
+	width: 100%;
+	height: 300px;
+}
+
+.offer-img-info {
+	background: #fff;
+	padding: 20px 15px;
+	-webkit-box-shadow: 0px 7px 13px -8px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 7px 13px -8px rgba(0, 0, 0, 0.22);
+	box-shadow: 0px 7px 13px -8px rgba(0, 0, 0, 0.22);
+}
+
+.offer-img-info h3 {
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+.offer-img-info .price {
+	color: #f25c20;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.offer-sidebar .avatar .i-avatar {
+	color: #fff;
+	background: #f25c20;
+	padding: 10px;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+
+.offer-sidebar .avatar .i-avatar i {
+	padding-left: 2px;
+	margin-top: -2px;
+}
+
+.crown i {
+	color: #4c6ef5;
+	position: absolute;
+	margin-left: -23px;
+	margin-top: -13px;
+}

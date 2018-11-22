@@ -1,0 +1,42 @@
+/* OFFERS */
+.offers-list {
+	list-style: none;
+}
+
+.offers-list {
+	margin: 40px 0;
+	padding: 0;
+}
+
+.offer-element {
+	display: flex;
+	background: #fff;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 30px;
+	cursor: pointer;
+}
+
+.offer-element .title {
+	color: #2f6292;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.offer-element .price {
+	color: #f25c20;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.offer-element img {
+	background: #ccc;
+	width: 200px;
+	height: 150px;
+	margin-right: 30px;
+}
+
+.offer-element:hover {
+	border-left: 3px solid #fb6c38;
+}

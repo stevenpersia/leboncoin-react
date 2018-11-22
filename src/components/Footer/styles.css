@@ -1,0 +1,11 @@
+/* FOOTER */
+
+footer {
+	background: #333;
+	margin-top: 50px;
+	padding: 20px;
+	color: #fff;
+	font-weight: 500;
+	bottom: 0;
+	width: calc(100% - 40px);
+}

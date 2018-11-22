@@ -1,0 +1,10 @@
+/* BLOCK SIGNUP */
+.signup-block {
+	display: flex;
+	align-items: center;
+	text-align: justify;
+}
+
+.signup-block img {
+	padding-right: 20px;
+}
