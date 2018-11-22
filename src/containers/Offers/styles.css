@@ -4,7 +4,7 @@
 }
 
 .offers-list {
-	margin: 40px 0;
+	margin: 20px 0;
 	padding: 0;
 }
 
@@ -16,6 +16,10 @@
 	border-right: 1px solid #ccc;
 	padding: 30px;
 	cursor: pointer;
+}
+
+.offer-element:last-child {
+	border-bottom: 1px solid #ccc;
 }
 
 .offer-element .title {

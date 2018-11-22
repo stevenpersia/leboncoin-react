@@ -1,0 +1,10 @@
+/* PAGINATION */
+.pagination {
+	text-align: center;
+}
+
+.pagination button {
+	width: 200px;
+	background: #333;
+	margin: 0 10px;
+}

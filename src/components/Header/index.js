@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import Cookies from 'js-cookie';
 import './styles.css';
 import Logo from '../../assets/img/logo.png';
 

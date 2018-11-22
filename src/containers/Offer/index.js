@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 import './styles.css';
 
@@ -49,7 +49,7 @@ class Offer extends Component {
 						{tovo()}
 					</div>
 
-					<a className="btn tel">
+					<a href="/" className="btn tel">
 						<i class="fas fa-phone" /> Voir le numéro
 					</a>
 				</div>

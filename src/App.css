@@ -35,7 +35,8 @@ a {
 
 /* FORM */
 input,
-textarea {
+textarea,
+select {
 	outline: none;
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -44,8 +45,20 @@ textarea {
 	margin: 10px 0 25px 0;
 }
 
+button {
+	outline: none;
+}
+
+select {
+	height: 45px;
+	background: #fff;
+	color: #868686;
+	width: 100%;
+}
+
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
 	border: 1px solid #f56b2a;
 }
 

@@ -1,0 +1,45 @@
+/* OFFERS FILTERS */
+.filters {
+	background: #e6e6e6;
+	padding: 10px 0 30px 0;
+}
+
+.filters-row {
+	display: flex;
+	align-items: flex-end;
+}
+
+.filters-first-column {
+	flex: 1;
+	margin-right: 30px;
+}
+
+.filters-second-column {
+	width: 250px;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.filters-price {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+.filters-first-column input {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.filters-second-column select {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.filters-price span {
+	padding: 0 20px;
+}
+
+.filters-price span:first-child {
+	min-width: 80px;
+}
