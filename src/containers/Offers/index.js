@@ -20,11 +20,18 @@ class Offers extends Component {
 			limit: MAX_LIMIT_NUMBER
 		}
 	};
-	updateList = (offers, count) => {
-		this.setState({
-			offers: offers,
-			count: count
-		});
+
+	reloadAxios = () => {
+		axios
+			.get('https://leboncoin-api.herokuapp.com/api/offer/with-count', {
+				params: this.state.search
+			})
+			.then(response => {
+				this.setState({
+					offers: response.data.offers,
+					count: response.data.count
+				});
+			});
 	};
 
 	changeSearch = (newSearch, axios) => {
@@ -53,20 +60,21 @@ class Offers extends Component {
 				/>
 			);
 		}
-		console.log(this.state.offers);
+
 		return (
 			<Fragment>
 				<div className="filters">
 					<OffersFilter
-						updateList={this.updateList}
+						reloadAxios={this.reloadAxios}
 						search={this.state.search}
+						changeSearch={this.changeSearch}
 					/>
 				</div>
 				<div className="container">
 					<h4>{this.state.count} résultats</h4>
 					<ul className="offers-list">{offersFound}</ul>
 					<Pagination
-						updateList={this.updateList}
+						reloadAxios={this.reloadAxios}
 						search={this.state.search}
 						changeSearch={this.changeSearch}
 						count={this.state.count}

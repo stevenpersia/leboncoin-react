@@ -57,6 +57,7 @@ class App extends Component {
 						<Header logOut={this.logOut} user={this.state.user} />
 						<Route
 							path="/"
+							exact
 							render={props => <Home {...props} user={this.state.user} />}
 						/>
 						<Route

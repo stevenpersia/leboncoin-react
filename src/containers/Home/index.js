@@ -1,9 +1,15 @@
-import React, { Component, Fragment } from 'react';
-/* import "./style.css"; */
+import React, { Component } from 'react';
+import './styles.css';
 
 class Home extends Component {
 	render() {
-		return <Fragment />;
+		return (
+			<div className="container">
+				<div>
+					<h2>Dernières annonces</h2>
+				</div>
+			</div>
+		);
 	}
 }
 

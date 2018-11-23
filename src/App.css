@@ -16,6 +16,17 @@ code {
 		monospace;
 }
 
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+	font-size: 22px;
+}
+
 a {
 	text-decoration: none;
 	color: #000;
@@ -43,6 +54,7 @@ select {
 	padding: 15px;
 	width: calc(100% - 30px);
 	margin: 10px 0 25px 0;
+	resize: none;
 }
 
 button {

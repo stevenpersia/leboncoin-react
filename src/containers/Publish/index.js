@@ -28,25 +28,33 @@ class Publish extends Component {
 		});
 	};
 
+	redirectToLoginPage = () => {
+		this.props.history.push('/log_in');
+	};
+
 	onSubmit = e => {
-		axios
-			.post(
-				'https://leboncoin-api.herokuapp.com/api/offer/publish',
-				{
-					title: this.state.title,
-					description: this.state.description,
-					price: this.state.price,
-					files: this.state.pictures
-				},
-				{ headers: { authorization: 'Bearer ' + this.props.user.token } }
-			)
-			.then(response => {
-				this.props.history.push('/offer/' + response.data._id);
-			})
-			.catch(err => {
-				console.log(err);
-			});
-		e.preventDefault();
+		if (!this.props.user.token) {
+			this.redirectToLoginPage();
+		} else {
+			axios
+				.post(
+					'https://leboncoin-api.herokuapp.com/api/offer/publish',
+					{
+						title: this.state.title,
+						description: this.state.description,
+						price: this.state.price,
+						files: this.state.pictures
+					},
+					{ headers: { authorization: 'Bearer ' + this.props.user.token } }
+				)
+				.then(response => {
+					this.props.history.push('/offer/' + response.data._id);
+				})
+				.catch(err => {
+					console.log(err);
+				});
+			e.preventDefault();
+		}
 	};
 
 	render() {

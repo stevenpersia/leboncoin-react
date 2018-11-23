@@ -48,12 +48,13 @@
 
 .offer-img-info {
 	background: #fff;
-	padding: 20px 15px;
+	padding: 15px;
 	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+	text-align: center;
 }
 
-.offer-img-info h3 {
+.offer-img-info h2 {
 	margin: 0;
 	padding-bottom: 10px;
 }
@@ -61,7 +62,7 @@
 .offer-img-info .price {
 	color: #f25c20;
 	font-weight: 600;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 .offer-sidebar .avatar .i-avatar {
@@ -91,12 +92,18 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	background: #fff;
+	padding-top: 1px;
 }
 
 .gallery img {
-	margin: 5px;
-	width: 100px;
-	height: 100px;
+	margin: 1px;
+	width: 98px;
+	height: 98px;
+}
+
+.gallery img:hover {
+	cursor: pointer;
+	opacity: 0.7;
 }
 
 .big-img {

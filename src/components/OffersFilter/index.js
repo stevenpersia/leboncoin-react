@@ -6,27 +6,15 @@ class OffersFilter extends Component {
 	handleChange = e => {
 		const { name, value } = e.target;
 
-		this.setState({
-			[name]: value
+		this.props.changeSearch({
+			[name]: value,
+			skip: 0
 		});
 	};
 
 	handleSubmit = e => {
-		axios
-			.get('https://leboncoin-api.herokuapp.com/api/offer/with-count', {
-				params: {
-					title: this.state.title,
-					priceMin: this.state.priceMin,
-					priceMax: this.state.priceMax,
-					sort: this.state.sort,
-					skip: this.state.skip,
-					limit: this.state.limit
-				}
-			})
-			.then(response => {
-				this.props.updateList(response.data.offers, response.data.count);
-			});
 		e.preventDefault();
+		this.props.reloadAxios();
 	};
 
 	render() {

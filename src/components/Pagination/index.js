@@ -3,16 +3,6 @@ import axios from 'axios';
 import './styles.css';
 
 class Pagination extends Component {
-	reloadAxios = () => {
-		axios
-			.get('https://leboncoin-api.herokuapp.com/api/offer/with-count', {
-				params: this.props.search
-			})
-			.then(response => {
-				this.props.updateList(response.data.offers, response.data.count);
-			});
-	};
-
 	clickPrevious = () => {
 		if (this.props.search.skip > 0) {
 			const newSkip = this.props.search.skip - 25;
@@ -20,7 +10,7 @@ class Pagination extends Component {
 				{
 					skip: newSkip
 				},
-				this.reloadAxios
+				this.props.reloadAxios
 			);
 		} else {
 			return null;
@@ -33,7 +23,7 @@ class Pagination extends Component {
 			{
 				skip: newSkip
 			},
-			this.reloadAxios
+			this.props.reloadAxios
 		);
 	};
 
