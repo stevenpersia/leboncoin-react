@@ -5,6 +5,8 @@ import OffersFilter from '../../components/OffersFilter';
 import OfferCard from '../../components/OfferCard';
 import Pagination from '../../components/Pagination';
 
+const MAX_LIMIT_NUMBER = 25;
+
 class Offers extends Component {
 	state = {
 		offers: [],
@@ -13,9 +15,9 @@ class Offers extends Component {
 			title: '',
 			priceMin: '',
 			priceMax: '',
-			sort: '',
+			sort: 'date-desc',
 			skip: 0,
-			limit: 25
+			limit: MAX_LIMIT_NUMBER
 		}
 	};
 	updateList = (offers, count) => {
