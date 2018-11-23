@@ -1,25 +1,20 @@
 /* OFFERS */
 .offers-list {
-	list-style: none;
-}
-
-.offers-list {
 	margin: 20px 0;
 	padding: 0;
+	list-style: none;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 }
 
 .offer-element {
 	display: flex;
 	background: #fff;
-	border-top: 1px solid #ccc;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-left: 3px solid #fff;
 	padding: 30px;
 	cursor: pointer;
-}
-
-.offer-element:last-child {
-	border-bottom: 1px solid #ccc;
 }
 
 .offer-element .title {
@@ -35,7 +30,7 @@
 }
 
 .offer-element img {
-	background: #ccc;
+	background: #f2f2f2;
 	width: 200px;
 	height: 150px;
 	margin-right: 30px;

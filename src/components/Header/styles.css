@@ -8,6 +8,7 @@ header {
 header div {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 header a {
@@ -15,11 +16,23 @@ header a {
 	text-decoration: none;
 }
 
-.menu li,
-.account li,
-.menu ul,
-.account ul {
-	display: inline;
+header .logo {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+}
+
+header .container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	display: inline-block;
 	padding: 0 10px;
 	margin: 0;
 	line-height: 60px;
@@ -28,7 +41,28 @@ header a {
 }
 
 .account li {
+	display: inline-block;
+	padding: 0 20px;
+	margin: 0;
+	line-height: 60px;
+	text-transform: uppercase;
+	font-weight: 500;
 	border-left: 1px solid #fff;
+	transition: 0.3s;
+}
+
+.menu li:hover {
+	text-decoration: underline;
+}
+
+.account li:hover {
+	background: #fff;
+	color: #f56b2a;
+	transition: 0.5s;
+}
+
+.account ul:last-child {
+	border-right: 1px solid #fff;
 }
 
 .menu ul a li::after {
@@ -37,4 +71,8 @@ header a {
 	border-left: 18px solid transparent;
 	border-right: 18px solid transparent;
 	border-bottom: 30px solid #fff;
+}
+
+.menu {
+	margin-left: 20px;
 }

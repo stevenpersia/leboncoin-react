@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import './styles.css';
-import Logo from '../../assets/img/logo.png';
 
 class Header extends Component {
 	onLogOut = e => {
@@ -14,11 +13,13 @@ class Header extends Component {
 			return (
 				<Fragment>
 					<Link to={{ pathname: '/account' }}>
-						<li>Mon compte</li>
+						<li>
+							<i className="fas fa-user-circle" /> Mon compte
+						</li>
 					</Link>
 
 					<li onClick={this.onLogOut} className="ahref">
-						Se déconnecter
+						<i className="fas fa-sign-out-alt" /> Se déconnecter
 					</li>
 				</Fragment>
 			);
@@ -26,10 +27,14 @@ class Header extends Component {
 			return (
 				<Fragment>
 					<Link to={{ pathname: '/log_in' }}>
-						<li>Se connecter</li>
+						<li>
+							<i className="fas fa-sign-in-alt" /> Se connecter
+						</li>
 					</Link>
 					<Link to={{ pathname: '/sign_up' }}>
-						<li>S'inscrire</li>
+						<li>
+							<i className="fas fa-plus-circle" /> S'inscrire
+						</li>
 					</Link>
 				</Fragment>
 			);
@@ -39,18 +44,20 @@ class Header extends Component {
 		return (
 			<header>
 				<div className="container">
-					<Link to={{ pathname: '/' }}>
-						<img src={Logo} alt="Leboncoin" />
-					</Link>
-					<div className="menu">
-						<ul>
-							<Link to={{ pathname: '/publish' }}>
-								<li>Déposer une annonce</li>
-							</Link>
-							<Link to={{ pathname: '/offers' }}>
-								<li>Offres</li>
-							</Link>
-						</ul>
+					<div>
+						<Link to={{ pathname: '/' }}>
+							<h1 className="logo">Lebonclone</h1>
+						</Link>
+						<div className="menu">
+							<ul>
+								<Link to={{ pathname: '/publish' }}>
+									<li>Déposer une annonce</li>
+								</Link>
+								<Link to={{ pathname: '/offers' }}>
+									<li>Offres</li>
+								</Link>
+							</ul>
+						</div>
 					</div>
 					<div className="account logged">
 						<ul>{this.renderAccountNav()}</ul>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactFileReader from 'react-file-reader';
 import './styles.css';
 import axios from 'axios';
 
@@ -6,7 +7,8 @@ class Publish extends Component {
 	state = {
 		title: '',
 		description: '',
-		price: ''
+		price: '',
+		pictures: []
 	};
 
 	handleInputChange = e => {
@@ -19,6 +21,13 @@ class Publish extends Component {
 		});
 	};
 
+	handlePictures = pictures => {
+		const newPictures = [...this.state.pictures, ...pictures.base64];
+		this.setState({
+			pictures: newPictures
+		});
+	};
+
 	onSubmit = e => {
 		axios
 			.post(
@@ -26,12 +35,12 @@ class Publish extends Component {
 				{
 					title: this.state.title,
 					description: this.state.description,
-					price: this.state.price
+					price: this.state.price,
+					files: this.state.pictures
 				},
 				{ headers: { authorization: 'Bearer ' + this.props.user.token } }
 			)
 			.then(response => {
-				console.log(response.data);
 				this.props.history.push('/offer/' + response.data._id);
 			})
 			.catch(err => {
@@ -41,6 +50,21 @@ class Publish extends Component {
 	};
 
 	render() {
+		const allPictures = [];
+		for (let i = 0; i < this.state.pictures.length; i++) {
+			allPictures.push(
+				<img
+					key={i}
+					onClick={() => {
+						const newPictures = [...this.state.pictures];
+						newPictures.splice(i, 1);
+						this.setState({ pictures: newPictures });
+					}}
+					src={this.state.pictures[i]}
+					alt={this.state.title}
+				/>
+			);
+		}
 		return (
 			<div className="container publish">
 				<div className="title">Votre annonce</div>
@@ -66,6 +90,22 @@ class Publish extends Component {
 						placeholder="20"
 						onChange={this.handleInputChange}
 					/>
+					<label>Ajouter des photos (7 photos au maximum)</label>
+					<div className="image-container">
+						<ReactFileReader
+							fileTpes={['.png', '.jpg', '.jpeg']}
+							base64={true}
+							multipleFiles={true}
+							handleFiles={this.handlePictures}
+						>
+							<span className="add-picture">
+								<i className="fas fa-camera fa-2x" />
+								Sélectionner vos photos
+							</span>
+						</ReactFileReader>
+						<div className="added-image">{allPictures}</div>
+					</div>
+
 					<button>Publier son annonce</button>
 				</form>
 			</div>

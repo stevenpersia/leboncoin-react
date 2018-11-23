@@ -17,9 +17,9 @@
 	height: 150px;
 	padding: 30px;
 	border-radius: 3px;
-	-webkit-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.22);
-	-moz-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.22);
-	box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow: 2px 4px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 2px 4px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .offer-sidebar img {
@@ -41,17 +41,16 @@
 }
 
 .offer-img img {
-	background: #ccc;
+	background: #fff;
 	width: 100%;
-	height: 300px;
+	height: auto;
 }
 
 .offer-img-info {
 	background: #fff;
 	padding: 20px 15px;
-	-webkit-box-shadow: 0px 7px 13px -8px rgba(0, 0, 0, 0.22);
-	-moz-box-shadow: 0px 7px 13px -8px rgba(0, 0, 0, 0.22);
-	box-shadow: 0px 7px 13px -8px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .offer-img-info h3 {
@@ -82,6 +81,25 @@
 .crown i {
 	color: #4c6ef5;
 	position: absolute;
-	margin-left: -23px;
-	margin-top: -13px;
+	margin-left: -7px;
+	margin-top: -9px;
+	transform: rotate(20deg);
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background: #fff;
+}
+
+.gallery img {
+	margin: 5px;
+	width: 100px;
+	height: 100px;
+}
+
+.big-img {
+	overflow: hidden;
+	height: 400px;
 }

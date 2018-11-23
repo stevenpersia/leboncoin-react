@@ -49,9 +49,11 @@ class Offers extends Component {
 					title={this.state.offers[i].title}
 					description={this.state.offers[i].description}
 					price={this.state.offers[i].price}
+					picture={this.state.offers[i].pictures}
 				/>
 			);
 		}
+		console.log(this.state.offers);
 		return (
 			<Fragment>
 				<div className="filters">
@@ -76,7 +78,7 @@ class Offers extends Component {
 	componentDidMount() {
 		axios
 			.get(
-				'https://leboncoin-api.herokuapp.com/api/offer/with-count?skip=0&limit=25'
+				'https://leboncoin-api.herokuapp.com/api/offer/with-count?skip=0&limit=25&sort=date-desc'
 			)
 			.then(response => {
 				this.setState({
