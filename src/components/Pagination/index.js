@@ -37,16 +37,10 @@ class Pagination extends Component {
 		);
 	};
 
-	// A REVOIR
-	renderPreviousButton = () => {
-		if (this.props.count >= 20) {
-			return <button onClick={this.clickPrevious}>Page précédente</button>;
-		}
-	};
 	render() {
 		return (
 			<div className="pagination">
-				{this.renderPreviousButton}
+				<button onClick={this.clickPrevious}>Page précédente</button>
 				<button onClick={this.clickNext}>Page suivante</button>
 			</div>
 		);
