@@ -58,13 +58,7 @@ class App extends Component {
 						<Route
 							path="/"
 							exact
-							render={props => <Home {...props} user={this.state.user} />}
-						/>
-						<Route
-							path="/account"
-							render={props => (
-								<Account {...props} logIn={this.logIn} user={this.state.user} />
-							)}
+							render={props => <Offers {...props} user={this.state.user} />}
 						/>
 						<Route
 							path="/sign_up"
@@ -87,10 +81,6 @@ class App extends Component {
 						<Route
 							path="/offer/:id"
 							render={props => <Offer {...props} user={this.state.user} />}
-						/>
-						<Route
-							path="/offers"
-							render={props => <Offers {...props} user={this.state.user} />}
 						/>
 					</Fragment>
 				</Router>

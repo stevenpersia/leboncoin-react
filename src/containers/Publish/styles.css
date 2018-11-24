@@ -25,7 +25,6 @@
 
 .image-container {
 	display: flex;
-	justify-content: center;
 	margin-top: 20px;
 }
 
@@ -42,23 +41,39 @@
 	margin: 5px;
 }
 
-.added-image img {
+.all-images {
+	display: flex;
+}
+
+.image-container .image {
 	width: 100px;
 	height: 100px;
 	border: 2px dashed #ccc;
 	border-radius: 3px;
 	margin: 5px;
+	display: flex;
+	background-position: center;
+	background-size: cover;
 }
 
-.added-image img::before {
-	font-family: 'Font Awesome 5 Free';
-	content: '\f1f8';
-	font-size: 15px;
-	position: absolute;
+.image-container .image .delete {
+	display: none;
+	color: #fff;
+}
+
+.image-container .image:hover .delete {
+	display: flex;
+}
+
+.image-container .delete {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 
 .add-picture:hover,
-.added-image img:hover {
+.image:hover {
 	cursor: pointer;
 	opacity: 0.6;
 }

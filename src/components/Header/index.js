@@ -12,12 +12,6 @@ class Header extends Component {
 		if (this.props.user._id) {
 			return (
 				<Fragment>
-					<Link to={{ pathname: '/account' }}>
-						<li>
-							<i className="fas fa-user-circle" /> Mon compte
-						</li>
-					</Link>
-
 					<li onClick={this.onLogOut} className="ahref">
 						<i className="fas fa-sign-out-alt" /> Se déconnecter
 					</li>
@@ -33,7 +27,7 @@ class Header extends Component {
 					</Link>
 					<Link to={{ pathname: '/sign_up' }}>
 						<li>
-							<i className="fas fa-plus-circle" /> S'inscrire
+							<i className="fas fa-sign-in-alt" /> S'inscrire
 						</li>
 					</Link>
 				</Fragment>
@@ -48,19 +42,19 @@ class Header extends Component {
 						<Link to={{ pathname: '/' }}>
 							<h1 className="logo">Lebonclone</h1>
 						</Link>
-						<div className="menu">
-							<ul>
-								<Link to={{ pathname: '/publish' }}>
-									<li>Déposer une annonce</li>
-								</Link>
-								<Link to={{ pathname: '/offers' }}>
-									<li>Offres</li>
-								</Link>
-							</ul>
-						</div>
 					</div>
-					<div className="account logged">
-						<ul>{this.renderAccountNav()}</ul>
+					<div className="menu logged">
+						<ul>
+							<Link to={{ pathname: '/' }}>
+								<li>Annonces</li>
+							</Link>
+							<Link to={{ pathname: '/publish' }}>
+								<li>
+									<i class="fas fa-plus-circle" /> Déposer une annonce
+								</li>
+							</Link>
+							{this.renderAccountNav()}
+						</ul>
 					</div>
 				</div>
 			</header>

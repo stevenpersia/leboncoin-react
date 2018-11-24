@@ -5,6 +5,12 @@
 	text-align: justify;
 }
 
-.signup-block img {
+.signup-block i {
 	padding-right: 20px;
+	color: #4183d7;
+}
+
+.block-icon {
+	min-width: 65px;
+	text-align: center;
 }

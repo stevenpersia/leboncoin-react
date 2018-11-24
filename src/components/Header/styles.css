@@ -33,15 +33,6 @@ ul {
 
 .menu li {
 	display: inline-block;
-	padding: 0 10px;
-	margin: 0;
-	line-height: 60px;
-	text-transform: uppercase;
-	font-weight: 500;
-}
-
-.account li {
-	display: inline-block;
 	padding: 0 20px;
 	margin: 0;
 	line-height: 60px;
@@ -52,16 +43,12 @@ ul {
 }
 
 .menu li:hover {
-	text-decoration: underline;
-}
-
-.account li:hover {
 	background: #fff;
 	color: #f56b2a;
 	transition: 0.5s;
 }
 
-.account ul:last-child {
+.menu ul:last-child {
 	border-right: 1px solid #fff;
 }
 
@@ -71,8 +58,4 @@ ul {
 	border-left: 18px solid transparent;
 	border-right: 18px solid transparent;
 	border-bottom: 30px solid #fff;
-}
-
-.menu {
-	margin-left: 20px;
 }

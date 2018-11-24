@@ -71,7 +71,33 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-	border: 1px solid #f56b2a;
+	border: 1px solid #333;
+}
+
+form input,
+form textarea,
+form select {
+	margin: 10px 0 0 0;
+}
+
+form .small {
+	display: block;
+	color: red;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+form label {
+	margin-top: 20px;
+	display: block;
+}
+
+form button {
+	margin-top: 20px;
+}
+
+.error {
+	border: 1px solid red;
 }
 
 button,
