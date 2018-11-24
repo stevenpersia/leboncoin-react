@@ -16,15 +16,13 @@
 	margin: -30px -30px 30px -30px;
 }
 
-.publish form {
-}
-
 .publish button {
 	margin-top: 30px;
 }
 
 .image-container {
 	display: flex;
+	flex-wrap: wrap;
 	margin-top: 20px;
 }
 
@@ -38,11 +36,7 @@
 	justify-content: center;
 	border: 2px dashed #ccc;
 	border-radius: 3px;
-	margin: 5px;
-}
-
-.all-images {
-	display: flex;
+	margin: 2px;
 }
 
 .image-container .image {
@@ -50,7 +44,7 @@
 	height: 100px;
 	border: 2px dashed #ccc;
 	border-radius: 3px;
-	margin: 5px;
+	margin: 2px;
 	display: flex;
 	background-position: center;
 	background-size: cover;

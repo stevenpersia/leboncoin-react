@@ -151,7 +151,7 @@ class Publish extends Component {
 								Sélectionner vos photos
 							</span>
 						</ReactFileReader>
-						<div className="all-images">{allPictures}</div>
+						{allPictures}
 					</div>
 
 					<button>Publier votre annonce</button>
