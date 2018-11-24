@@ -40,6 +40,10 @@
 	margin-left: 10px;
 }
 
+.offer-content p {
+	text-align: justify;
+}
+
 .offer-img img {
 	background: #fff;
 	width: 100%;
@@ -108,5 +112,5 @@
 
 .big-img {
 	overflow: hidden;
-	height: 400px;
+	max-height: 400px;
 }

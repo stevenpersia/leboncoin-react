@@ -50,7 +50,7 @@ class Header extends Component {
 							</Link>
 							<Link to={{ pathname: '/publish' }}>
 								<li>
-									<i class="fas fa-plus-circle" /> Déposer une annonce
+									<i className="fas fa-plus-circle" /> Déposer une annonce
 								</li>
 							</Link>
 							{this.renderAccountNav()}

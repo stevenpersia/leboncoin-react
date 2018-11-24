@@ -126,7 +126,7 @@ class SignUp extends Component {
 								? "Veuillez indiquer un mot de passe d'au moins 8 caractères."
 								: ''}
 						</span>
-						<button>Créer mon compte personnel</button>
+						<button>Créer mon compte</button>
 					</form>
 				</div>
 			</div>

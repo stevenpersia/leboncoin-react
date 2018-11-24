@@ -16,7 +16,7 @@ class Offer extends Component {
 	render() {
 		/* Loading page for undefined issue (asynchronus) */
 		if (Object.keys(this.state.offer).length === 0) {
-			return <p>Loading ...</p>;
+			return <p />;
 		}
 
 		/* Just a private joke */

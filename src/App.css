@@ -143,3 +143,112 @@ button:hover,
 	width: auto;
 	text-align: center;
 }
+
+/* MEDIAS QUERIES */
+@media (max-width: 400px) {
+	.offer-element img {
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-width: 670px) {
+	/* FILTERS HOME */
+	.filters-row {
+		display: block;
+	}
+
+	.filters-row input {
+		width: 100%;
+	}
+
+	.filters-price {
+		display: block;
+	}
+
+	.filters-price span {
+		display: none;
+	}
+
+	.filters-second-column {
+		width: 100%;
+		display: block;
+	}
+
+	/* OFFERS LIST */
+	.offer-element {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.offer-content p {
+		text-align: center;
+	}
+
+	.offer-element img {
+		margin-right: 0;
+		align-self: center;
+	}
+}
+
+@media (max-width: 900px) {
+	/* HEADER */
+	.menu {
+		display: none;
+	}
+
+	/* CREATE AN ACCOUNT */
+	.signup {
+		flex-direction: column-reverse;
+	}
+
+	.signup-content {
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	.signup-block {
+		text-align: center;
+		flex-direction: column;
+	}
+
+	.signup-block i {
+		padding: 0;
+		margin-top: 15px;
+	}
+
+	/* OFFER PAGE */
+	.offer {
+		flex-direction: column;
+	}
+
+	.offer-sidebar {
+		width: 100%;
+		height: auto;
+		padding: 0;
+	}
+
+	.offer-content h4 {
+		text-align: center;
+	}
+
+	.offer-sidebar .avatar {
+		margin-top: 30px;
+	}
+
+	.tel {
+		margin: 0 30px 30px 30px;
+	}
+
+	.offer-main {
+		margin: 0;
+		padding-bottom: 30px;
+	}
+}
+
+@media (max-width: 1060px) {
+	/* HEADER */
+	header .container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}

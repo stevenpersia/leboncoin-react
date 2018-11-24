@@ -1,8 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Cookies from 'js-cookie';
-import Home from './containers/Home';
-import Account from './containers/Account';
 import SignUp from './containers/SignUp';
 import LogIn from './containers/LogIn';
 import Publish from './containers/Publish';
