@@ -56,6 +56,9 @@ class Header extends Component {
 							{this.renderAccountNav()}
 						</ul>
 					</div>
+					<div className="burger-menu">
+						<i className="fas fa-bars fa-2x" />
+					</div>
 				</div>
 			</header>
 		);

@@ -145,12 +145,20 @@ button:hover,
 }
 
 /* MEDIAS QUERIES */
+@media (min-width: 900px) {
+	/* HEADER */
+	.burger-menu {
+		display: none;
+	}
+}
+
 @media (max-width: 400px) {
 	.offer-element img {
 		width: 100%;
 		height: auto;
 	}
 }
+
 @media (max-width: 670px) {
 	/* FILTERS HOME */
 	.filters-row {
