@@ -1,38 +1,16 @@
 # Leboncoin React
-![alt text](https://forthebadge.com/images/badges/made-with-javascript.svg "Made with JavaScript")
-![alt text](https://forthebadge.com/images/badges/designed-in-ms-paint.svg "Design in MS Paint")
-![alt text](https://forthebadge.com/images/badges/powered-by-netflix.svg "Powered by Netflix")
+![](https://img.shields.io/github/last-commit/stevenpersia/leboncoin-react.svg?style=for-the-badge)
+![](https://img.shields.io/snyk/vulnerabilities/github/stevenpersia/leboncoin-react.svg?style=for-the-badge)
+![](https://img.shields.io/codeclimate/maintainability/stevenpersia/leboncoin-react.svg?style=for-the-badge)
+![](https://img.shields.io/github/license/stevenpersia/leboncoin-react.svg?style=for-the-badge)
+![](https://img.shields.io/badge/You%20like%20%3F-star%20me-blue.svg?style=for-the-badge)
 
 A little clone of Leboncoin made with React. All rights reserved to Leboncoin & Groupe Schibsted.
 For now, I've made only Front end (used another API).
+
+![](https://github.com/stevenpersia/leboncoin-react/blob/master/src/assets/img/preview-lebonclone.png)
 
 ---
 
 ## Demo
 See demo : https://leboncoin-react.netlify.com/
-
----
-
-## License
-
-> MIT License
-> 
-> Copyright (c) 2018 Steven Persia
-> 
-> Permission is hereby granted, free of charge, to any person obtaining a copy
-> of this software and associated documentation files (the "Software"), to deal
-> in the Software without restriction, including without limitation the rights
-> to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-> copies of the Software, and to permit persons to whom the Software is
-> furnished to do so, subject to the following conditions:
-> 
-> The above copyright notice and this permission notice shall be included in all
-> copies or substantial portions of the Software.
-> 
-> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-> IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-> FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-> AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-> LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-> OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-> SOFTWARE.
