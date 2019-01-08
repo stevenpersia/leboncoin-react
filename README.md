@@ -8,7 +8,7 @@
 A little clone of Leboncoin made with React. All rights reserved to Leboncoin & Groupe Schibsted.
 For now, I've made only Front end (used another API).
 
-![](https://github.com/stevenpersia/leboncoin-react/blob/master/src/assets/img/preview-lebonclone.png)
+[![](https://github.com/stevenpersia/leboncoin-react/blob/master/src/assets/img/preview-lebonclone.png)](https://leboncoin-react.netlify.com/)
 
 ---
 
