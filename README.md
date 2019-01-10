@@ -14,3 +14,10 @@ For now, I've made only Front end (used another API).
 
 ## Demo
 See demo : https://leboncoin-react.netlify.com/
+
+## Features
+
+- Register feature
+- Authentication feature
+- Publish content (with pictures) feature
+- And many more...
