@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.3",
     "cloudinary": "^1.13.2",
     "js-cookie": "^2.2.0",
     "react": "^16.6.3",
@@ -11,7 +11,7 @@
     "react-file-reader": "^1.1.4",
     "react-router-dom": "^4.3.1",
     "react-scripts": "4.0.0",
-    "snyk": "^1.316.1"
+    "snyk": "^1.685.0"
   },
   "scripts": {
     "start": "react-scripts start",
