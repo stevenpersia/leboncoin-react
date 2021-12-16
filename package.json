@@ -10,7 +10,7 @@
     "react-dom": "^16.6.3",
     "react-file-reader": "^1.1.4",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "4.0.0",
+    "react-scripts": "5.0.0",
     "snyk": "^1.316.1"
   },
   "scripts": {
